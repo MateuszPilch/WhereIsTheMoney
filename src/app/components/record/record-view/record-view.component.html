@@ -1,0 +1,32 @@
+<div class="card bg-light border no-border shadow-sm">
+   <div class="card-header h3">Debts Record</div>
+   <div class="card-body">
+      <div class="input-group mb-3">
+         <input type="search" class="form-control w-50" placeholder="Search" />
+         <button type="button" class="btn btn-primary">
+            <i class="bi bi-search"></i>
+         </button>   
+      </div>
+      <div class="input-group justify-content-center">
+         <div class="d-inline-block">
+            <div class="input-group" ngbDropdown placement="bottom-end">
+               <button type="button" class="btn btn-outline-info">Lend</button>
+               <button type="button" class="btn btn-outline-danger">Debt</button>
+               <button type="button" class="btn btn-outline-primary">All</button>
+               <button type="button" class="btn btn-primary" id="dropdownBasic1" ngbDropdownToggle>
+                  <i class="bi bi-filter"></i>
+               </button>
+               <div ngbDropdownMenu aria-labelledby="dropdownrecords">
+                  <button ngbDropdownItem>Latest</button>
+                  <button ngbDropdownItem>Oldest</button>
+                  <button ngbDropdownItem>Highest</button>
+                  <button ngbDropdownItem>Lowest</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="card-footer">
+      <app-record-list></app-record-list>
+   </div>
+</div>

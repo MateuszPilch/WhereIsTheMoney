@@ -4,10 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { LoginComponent } from './login/login.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { AccountComponent } from './account/account.component';
-import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './components/login/login.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { AccountComponent } from './components/account/account.component';
+import { HomeComponent } from './components/home/home.component';
+import { RecordListComponent } from './components/record/record-list/record-list.component';
+import { RecordViewComponent } from './components/record/record-view/record-view.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { HomeComponent } from './home/home.component';
     LoginComponent,
     DashboardComponent,
     AccountComponent,
-    HomeComponent
+    HomeComponent,
+    RecordViewComponent,
+    RecordListComponent,
   ],
   imports: [
     BrowserModule,
