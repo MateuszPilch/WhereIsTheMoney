@@ -5,21 +5,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './components/login/login.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { AccountComponent } from './components/account/account.component';
 import { HomeComponent } from './components/home/home.component';
-import { RecordListComponent } from './components/record/record-list/record-list.component';
-import { RecordViewComponent } from './components/record/record-view/record-view.component';
+import { RecordsListComponent } from './components/records/records-list/records-list.component';
+import { RecordsViewComponent } from './components/records/records-view/records-view.component';
+import { FriendsListComponent } from './components/friends/friends-list/friends-list.component';
+import { FriendsViewComponent } from './components/friends/friends-view/friends-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashboardComponent,
+    NavbarComponent,
     AccountComponent,
     HomeComponent,
-    RecordViewComponent,
-    RecordListComponent,
+    RecordsViewComponent,
+    RecordsListComponent,
+    FriendsListComponent,
+    FriendsViewComponent,
   ],
   imports: [
     BrowserModule,

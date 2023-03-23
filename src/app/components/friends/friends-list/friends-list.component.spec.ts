@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RecordViewComponent } from '../records-view/records-view.component';
+import { FriendsListComponent } from './friends-list.component';
 
-describe('RecordViewComponent', () => {
-  let component: RecordViewComponent;
-  let fixture: ComponentFixture<RecordViewComponent>;
+describe('FriendsListComponent', () => {
+  let component: FriendsListComponent;
+  let fixture: ComponentFixture<FriendsListComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RecordViewComponent ]
+      declarations: [ FriendsListComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(RecordViewComponent);
+    fixture = TestBed.createComponent(FriendsListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
