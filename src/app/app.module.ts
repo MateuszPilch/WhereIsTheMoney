@@ -9,9 +9,11 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { AccountComponent } from './components/account/account.component';
 import { HomeComponent } from './components/home/home.component';
 import { RecordsListComponent } from './components/records/records-list/records-list.component';
-import { RecordsViewComponent } from './components/records/records-view/records-view.component';
+import { RecordsSectionComponent } from './components/records/records-section/records-section.component';
 import { FriendsListComponent } from './components/friends/friends-list/friends-list.component';
-import { FriendsViewComponent } from './components/friends/friends-view/friends-view.component';
+import { FriendsSectionComponent } from './components/friends/friends-section/friends-section.component';
+import { FriendsAddComponent } from './components/friends/friends-add/friends-add.component';
+import { RecordsAddComponent } from './components/records/records-add/records-add.component';
 
 @NgModule({
   declarations: [
@@ -20,10 +22,12 @@ import { FriendsViewComponent } from './components/friends/friends-view/friends-
     NavbarComponent,
     AccountComponent,
     HomeComponent,
-    RecordsViewComponent,
+    RecordsSectionComponent,
     RecordsListComponent,
     FriendsListComponent,
-    FriendsViewComponent,
+    FriendsSectionComponent,
+    FriendsAddComponent,
+    RecordsAddComponent,
   ],
   imports: [
     BrowserModule,
