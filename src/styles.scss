@@ -1,9 +1,20 @@
 @import 'bootstrap/scss/bootstrap';
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
-html, body
+.bg-gray
 {
-   padding: 5px 0px 40px 0px;
-   background-image: linear-gradient(to bottom,#ebeaea, #d7d7d7);
-   background-attachment: fixed;
+   background-color:#f2f2f2;
+}
+
+.hero-section
+{
+   display: flex;
+   height: 20vh;
+}
+.content-modern
+{
+   border-top-left-radius: 30px;
+   border-top-right-radius: 30px;
+   background-color: white;
+   padding: 10% 5% 15% 5%;
 }

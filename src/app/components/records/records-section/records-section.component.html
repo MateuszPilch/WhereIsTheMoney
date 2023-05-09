@@ -1,34 +1,38 @@
-<div class="card bg-light border no-border shadow">
-   <div class="card-body">
-      <div class="card-title mb-3 h2 text-center">Records</div>
-      <div class="d-flex justify-content-center mb-3">
-         <div class="input-group w-75">
-            <input type="search" class="form-control" placeholder="Search"/>
-            <button type="button" class="btn btn-primary">
-               <i class="bi bi-search"></i>
-            </button> 
-         </div> 
-      </div>
-      <div class="input-group justify-content-center">
-         <div class="d-inline-block">
-            <div class="input-group" ngbDropdown placement="bottom-end">
-               <button type="button" class="btn btn-outline-info">Loan</button>
-               <button type="button" class="btn btn-outline-danger">Debt</button>
-               <button type="button" class="btn btn-outline-primary">All</button>
-               <button type="button" class="btn btn-primary" ngbDropdownToggle>
+<div class="bg-primary">
+  <div class="hero-section"></div>
+  <div class="content-modern">
+    <div class="d-grid gap-5">
+      <div class="mb-4">
+        <div class="h1 mb-4">Records</div>
+        <div class="p-3 bg-gray rounded-4">
+          <div class="d-flex justify-content-center mb-3">
+            <div class="input-group">
+              <input type="search" class="form-control rounded-pill" placeholder="Search"/>
+            </div>
+          </div>
+          <div class="input-group justify-content-center">
+            <div class="d-inline-block">
+              <div class="input-group" ngbDropdown placement="bottom-end">
+                <button type="button" class="btn btn-outline-info">Loan</button>
+                <button type="button" class="btn btn-outline-danger">Debt</button>
+                <button type="button" class="btn btn-outline-primary">All</button>
+                <button type="button" class="btn btn-primary" ngbDropdownToggle>
                   <i class="bi bi-filter"></i>
-               </button>
-               <div ngbDropdownMenu aria-labelledby="dropdownrecords">
+                </button>
+                <div ngbDropdownMenu aria-labelledby="dropdownrecords">
                   <button ngbDropdownItem>Latest</button>
                   <button ngbDropdownItem>Oldest</button>
                   <button ngbDropdownItem>Highest</button>
                   <button ngbDropdownItem>Lowest</button>
-               </div>
+                </div>
+              </div>
             </div>
-         </div>
+          </div>
+          <div class="mt-5">
+            <app-records-list></app-records-list>
+          </div>
+        </div>
       </div>
-   </div>
-   <div class="card-footer">
-      <app-records-list></app-records-list>
-   </div>
+    </div>
+  </div>
 </div>
