@@ -1,4 +1,4 @@
-<div class="bg-primary">
+<div class="bg-gradiant-blue">
   <div class="hero-section"></div>
   <div class="content-modern">
     <div class="d-grid gap-5">
@@ -8,27 +8,37 @@
       </div>
       <div class="mb-4">
         <div class="h1 mb-4">Overview</div>
-        <div class="p-3 bg-gray rounded-4">
-          <div class="d-flex justify-content-between align-items-center mb-4">
-            <div class="ms-1 text-start">
-              <p class="mb-3">Your loans:</p>
-              <p class="mb-2">Your debts:</p>
-            </div>
-            <div class="text-end">
-              <p class="h5 mb-3">100.00 $</p>
-              <p class="h5 mb-2">100.00 $</p>
-            </div>
-          </div>
-          <div>
-            <div class="row text-start">
-              <div class="col">50%</div>
-              <div class="col text-end">50%</div>
-            </div>
-            <div class="progress" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-info" role="progressbar" style="width: 50%"></div>
-              <div class="progress-bar bg-danger" role="progressbar" style="width: 50%"></div>
-            </div>
-          </div>
+        <div class="p-3 bg-gray rounded-4 shadow">
+          <table class="w-100">
+            <tr>
+              <th colspan="2">
+                <apx-chart
+                  [series]="chartOptions.series"
+                  [chart]="chartOptions.chart"
+                  [legend]="chartOptions.legend"
+                  [plotOptions]="chartOptions.plotOptions"
+                  [fill]="chartOptions.fill"
+                  [grid]="chartOptions.grid"
+                  [stroke]="chartOptions.stroke"
+                  [tooltip]="chartOptions.tooltip"
+                ></apx-chart>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <div class="text-start">
+                  <p class="h4 mb-3">Loans</p>
+                  <p class="mb-2">150.00 $</p>
+                </div>
+              </td>
+              <td>
+                <div class="text-end">
+                  <p class="h4 mb-3">Debts</p>
+                  <p class="mb-2">100.00 $</p>
+                </div>
+              </td>
+            </tr>
+          </table>
         </div>
       </div>
       <div class="mb-4">
@@ -36,7 +46,7 @@
       </div>
       <div class="mb-4">
         <div class="h1 mb-4">Latest</div>
-        <div class="p-3 bg-gray rounded-4">
+        <div class="p-3 bg-gray rounded-4 shadow">
           <app-records-list></app-records-list>
         </div>
       </div>
